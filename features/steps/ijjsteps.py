@@ -25,6 +25,6 @@ def step_envio_mensagem(context):
     mensagem_element.send_keys("Teste - Hello!!")
 
     botao_enviar = WebDriverWait(context.driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[2]/section[8]/div[1]/form/button"))
+        EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[2]/section[9]/div[1]/form/button"))
     )
     context.driver.execute_script("arguments[0].click();", botao_enviar)
